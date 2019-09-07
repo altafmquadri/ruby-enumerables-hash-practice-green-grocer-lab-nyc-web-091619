@@ -12,7 +12,7 @@ end
 
 def apply_coupons(cart, coupons)
   coupons.each do |memo|
-      
+    
     binding.pry
   end
 end
