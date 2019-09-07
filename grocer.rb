@@ -13,6 +13,8 @@ end
 def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     item = coupon[:item]
+    if item
+      if cart[item] && 
     binding.pry
   end
 end
