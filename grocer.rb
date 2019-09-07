@@ -11,8 +11,8 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  coupons.each do |memo|
-    item = memo[:item]
+  coupons.each do |coupon|
+    item = coupon[:item]
     binding.pry
   end
 end
