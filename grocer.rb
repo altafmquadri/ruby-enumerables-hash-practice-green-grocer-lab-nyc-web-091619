@@ -13,8 +13,9 @@ end
 def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     item = coupon[:item]
+    discounted = "#{cart"
     if item
-      if cart[item] && cart[item][:count] >= 
+      if cart[item] && cart[item][:count] >= coupon[:num] && 
     binding.pry
   end
 end
