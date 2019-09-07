@@ -20,6 +20,7 @@ def apply_coupons(cart, coupons)
         cart[item][:count] -= coupon[:num]
       elsif cart[item][:count] >= coupon[:num] && discounted
         cart[item][:count] -= coupon[:num]
+        binding.pry
       end
     end
   end
