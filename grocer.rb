@@ -13,9 +13,9 @@ end
 def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     item = coupon[:item]
-    discounted = "#{cart"
-    if item
-      if cart[item] && cart[item][:count] >= coupon[:num] && 
+    discounted = "#{item} W/COUPON"
+    if cart[item]
+      if cart[item] && cart[item][:count] >= coupon[:num] && !discounted
     binding.pry
   end
 end
