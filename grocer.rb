@@ -18,7 +18,7 @@ def apply_coupons(cart, coupons)
       if cart[item] && cart[item][:count] >= coupon[:num] && !discounted
         cart[discounted] = {price: coupon[:cost]/coupon[:num]
         cart[item][:count] -= coupon[:num]
-        elsif 
+        elsif cart[item][:count] >= coupon[:num] && discounted
     binding.pry
   end
 end
